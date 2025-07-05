@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Nirman's Portfolio</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <header class="header">
+                <a href="#home" class="logo">Nirman<span>kumar</span></a>
+
+                <i class='bx  bx-menu' id="menu-icon"></i>
+
+                <nav class="navbar">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#timeline">Timeline</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+        </header> 
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Nirman</span></h1>
+                <h3 class="text-animation">I'm a <span></span>
+                </h3>
+                <p><h2> Science graduate with experience in software development, machine learning, and full-stack web development.
+Proficient in Python, Django, MERN stack, and cloud technologies. Strong in problem-solving and building scalable, user-centric
+solutions.</h2></p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nirman-kumar-95b9671a1/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Nirman8070" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire</a>
+                    <a href="#contact" class="btn">Contact</a>
+                    <a href="{{ url_for('static', filename='resume/Nirman_kumar_RESUME.pdf') }}" class="btn btn-resume" download>
+    Resume
+    <i class='bx bx-download' style="margin-left: 0.5rem; vertical-align: middle;"></i>
+</a>
+                </div>
+            </div>
+                <div class="home-img">
+                    <img src="{{ url_for('static', filename='images/myphoto.jpg') }}" alt="My Photo">
+                </div>
+        </section>
+
+        <section class="timeline" id="timeline">
+            <h2 class="heading">Timeline</h2>
+
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">01/2024 - 07/2024</div>
+                        <div class="timeline-content">
+                        <h3><b>Software Development Intern</b></h3>
+                        <h3><b>Software Education & Research Pvt. Ltd.</b><a href="https://drive.google.com/file/d/1pVNOVkbn1_xuuaYK1RXehEWyd0okXQaT/view?usp=sharing" target="_blank" style="margin-left: 0.7rem;"><i class='bx bx-link' style="color: white;"></i></a></h3>
+                        <p>My experience spans various areas of image processing, data management, and financial technology. I've developed solutions for challenging problems, from enhancing facial recognition in difficult conditions to building real-time trading platforms.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019-2023</div>
+                        <div class="timeline-content">
+                        <h3><b>Bachelor's Degree</b></h3>
+                        <h3><b>LNJPIT College, Bihar Engineering University</b></h3>
+                        <h3><b>CGPA:</b> 7.81/10</h3>
+                        <p>Completed Bachelor's degree in Computer Science with a focus on software development and machine learning also achieved a strong foundation in algorithms, data structures, and software engineering principles.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-box">
+            <h2 class="heading">My<span> Projects</span></h2>
+                <div class="wrapper">
+                    <div class="projects-item">
+                    <img src="{{ url_for('static', filename='project_image/spp.jpeg') }}" alt="">
+                    <h2>Stock price predictor</h2>
+                    <p>
+                        The aim of this project is to examine several different forecasting techniques to predict future stock returns based on past
+returns and numerical news indicators to construct a portfolio of multiple stocks to diversify the risk.
+                    </p></br>
+                    <a href="https://github.com/Nirman8070/Stockpriceprediction" target="_blank" title="View on GitHub" style="display:inline-block; margin-top:1rem;">
+                        <i class='bx bxl-github' style="font-size:4rem; color:var(--main-color); vertical-align:middle;"></i>
+                    </a>
+                </div>
+
+                    <div class="projects-item">
+                    <img src="{{ url_for('static', filename='project_image/fmd.jpg') }}" alt="">
+                    <h2>Face mask detector</h2>
+                    <p>
+                        Face mask detection project is a computer vision project that uses computer vision to detect whether a person is wearing a face
+                        mask. This can be done by using a camera to capture images of people's faces and then using a machine learning model to
+                        classify each face as either "with mask" or "without mask".
+                    </p></br>
+                    <a href="https://github.com/Nirman8070/Face_mask_detector" target="_blank" title="View on GitHub" style="display:inline-block; margin-top:1rem;">
+                        <i class='bx bxl-github' style="font-size:4rem; color:var(--main-color); vertical-align:middle;"></i>
+                    </a>
+                </div>
+
+                    <div class="projects-item">
+                    <img src="{{ url_for('static', filename='project_image/cbt.jpg') }}" alt="">
+                    <h2>Chatbot using Python</h2>
+                    <p>
+                        This project will use a sequence-to-sequence model with attention mechanism to generate Responses based on the user input
+                        and the context.
+                    </p></br>
+                    <a href="https://github.com/Nirman8070/chatbot" target="_blank" title="View on GitHub" style="display:inline-block; margin-top:1rem;">
+                        <i class='bx bxl-github' style="font-size:4rem; color:var(--main-color); vertical-align:middle;"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+        <div class="skill-box">
+            <h4>Programming Languages</h4>
+            <ul>
+                <i class='bx bxl-python'></i>
+                <i class='bx bxl-javascript' ></i>
+                <i class='bx bxl-c-plus-plus' ></i>
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h4>Frameworks & Libraries</h4>
+            <ul>
+                <i class='bx bxl-flask' ></i>
+                <i class='bx bxl-django' ></i>
+                <i class='bx bxl-react' ></i>
+                <i class='bx bxl-nodejs' ></i>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h4>Database & Cloud</h4>
+            <ul>
+                <i class='bx bxl-mongodb' ></i>
+                <i class='bx bxl-google-cloud' ></i>
+                <i class='bx bxs-data'></i>
+                <i class='bx bxl-aws' ></i>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h4>Tools & Technologies</h4>
+            <ul>
+                <i class='bx bxl-git'></i>
+                <i class='bx bxl-github' ></i>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+        <section class="services" id="services">
+            <h2 class="heading">Services<span> i Provide</span></h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4>Python Development</h4>
+                        <h3><ul>
+    <li>Custom backend development using Python, Django, and Flask</li>
+    <li>RESTful API design and integration</li>
+    <li>Automation scripts for data processing and system tasks</li>
+    <li>Database-driven applications using MySQL and MongoDB</li>
+    <li>Image processing and facial recognition systems</li>
+  </ul></h3>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4>ML Engineer</h4>
+                        <h3><ul>
+    <li>Predictive Modeling & Forecasting (e.g., stock price prediction)</li>
+    <li>Computer Vision Applications (e.g., face mask detection, facial recognition)</li>
+    <li>Chatbot Development using deep learning (Seq2Seq, attention mechanisms)</li>
+    <li>Model Deployment for real-time ML services in production</li>
+  </ul></h3>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4>Web development</h4>
+                        <h3>
+                            <ul>
+    <li>Responsive and dynamic web apps using MERN stack (MongoDB, Express.js, React, Node.js)</li>
+    <li>Scalable backend systems with Django and REST APIs</li>
+    <li>Integration of real-time data visualization (e.g., stock charts, routing tools)</li>
+    <li>Cloud-hosted solutions with Git-based CI/CD workflows</li>
+  </ul>
+
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Let's<span> make</span> something <span>great</span> together!</h2>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>  
+                    
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/nirman-kumar-95b9671a1/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Nirman8070" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        
+            <ul class="list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <p class="copyright">© 2023 Nirman Kumar. All rights reserved.</p>
+        </footer>
+            
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
